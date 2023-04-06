@@ -1,0 +1,74 @@
+// if-else statements
+
+Boolean isItSunny = true;
+Boolean isItRaining = false;
+Boolean areYouWorking = false;
+
+if(isItSunny == false){
+    System.debug('Do not go to party');
+} else if (isItRaining == true){
+    System.debug('Do not go to party');
+} else if ( areYouWorking == true){
+    System.debug('Do not go to party');
+} else{
+    //multi line code block
+    System.debug('Yayy!! its party time');
+}
+
+
+// switch-when statement
+
+Integer currentHour = 19;
+switch on currentHour {
+    when 0,1,2,3,4,5,6,7,8,9,10,11{
+        System.debug('Good Morning');
+    }
+    when 12,13,14,15,16{
+        System.debug('Good Afternoon');
+    }
+    when else {
+        System.debug('Good Evening');
+    }
+}
+
+
+// do-while statement
+
+Integer i = 1;
+do {
+    if(Math.mod(i, 3) == 0 && Math.mod(i, 5) == 0){
+        System.debug('fizzbuzz');
+    }
+    else if(Math.mod(i, 3) == 0){
+        System.debug('fizz');
+    }
+    else if(Math.mod(i, 5) == 0){
+        System.debug('buzz');
+    }
+    else {
+        System.debug(i);
+    }
+
+    i++;
+} while ( i<16);
+
+
+// while loop
+
+Integer i=1;
+while(i<16){
+    if(Math.mod(i, 3) == 0 && Math.mod(i, 5) == 0){
+        System.debug('fizzbuzz');
+    }
+    else if(Math.mod(i, 3) == 0){
+        System.debug('fizz');
+    }
+    else if(Math.mod(i, 5) == 0){
+        System.debug('buzz');
+    }
+    else {
+        System.debug(i);
+    }
+
+    i++;
+}
