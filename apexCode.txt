@@ -1,5 +1,5 @@
 // if-else statements
-
+/*
 Boolean isItSunny = true;
 Boolean isItRaining = false;
 Boolean areYouWorking = false;
@@ -72,3 +72,61 @@ while(i<16){
 
     i++;
 }
+*/
+//---------------------------11 to 19 ---------------------------
+
+/*
+//---------------for loop--------------
+
+for(Integer i = 1;i<16;i++){
+    if((Math.mod(i, 3)==0) && (Math.mod(i, 5)==0)){
+        System.debug('fizzbuzz');
+    }
+    else if(Math.mod(i, 3)==0){
+        System.debug('fizz');
+    }
+    else if(Math.mod(i, 5)==0){
+        System.debug('buzz');
+    }
+    else{
+        System.debug(i);
+    }
+}
+
+*/
+
+/*
+//-------------list or set iteration for loop-----------
+List<String> days = new List<String>{
+    	'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday'};
+for(String day : days){
+    if(day == 'Friday'||day == 'Saturday'){
+        System.debug('It is '+day+'. Lets go out!');
+    }
+    else
+    	System.debug('It is '+day+'. Work day!');
+}
+
+*/
+ // --------------initialize HelloWorld class in developer console-------------
+HelloWorld firstClass = new HelloWorld();
+// calling class methods
+firstClass.printGreeting();
+
+//-----class------
+
+public class HelloWorld {
+    String greeting = 'Hello World';
+
+    public void printGreeting() {
+        System.debug(greeting);
+    }
+
+}
+//-------------------------------------
