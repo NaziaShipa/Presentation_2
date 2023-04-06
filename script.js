@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 let hasDriversLicense = false;
 const passTest = true;
 
@@ -87,3 +87,85 @@ function fruitProcessor(apples, oranges){
 }
 
 console.log(fruitProcessor(2,3));
+
+ */
+
+//-------------Arrays----------------------------------
+/*
+const friends = ['Asif', 'Anam', 'Shaon']
+console.log(friends)
+console.log(friends.length)
+console.log(friends[friends.length-1])
+friends[2] = 'Zoo'
+console.log(friends)
+
+const me = ['Asif', 'Anam', true, 24]
+console.log(me)
+
+
+function calcAge(birthyear){
+    return 2023 - birthyear
+}
+
+const years = [1999,1998,2000,2020]
+const age1 = calcAge(years[0])
+const age2 = calcAge(years[1])
+const age3 = calcAge(years[years.length-1])
+
+console.log(age1,age2,age3)
+const ages = [age1, age2, age3]
+console.log(ages)
+
+ */
+//------------Array methods -----------------------
+/*
+const friends = ['Asif', 'Anam', 'Shaon']
+friends.push('Arman') //add new element at the end
+friends.push('Zoo')
+friends.push('Alex')
+console.log(friends)
+
+friends.unshift('Aldo') //add at the begining
+console.log(friends)
+const popped = friends.pop() // remove last element
+console.log(popped)
+const removeFirst = friends.shift() //remove first
+console.log(removeFirst)
+console.log(friends.indexOf('Anam')) //index where element is located
+console.log(friends.indexOf('Aldo'))
+
+console.log(friends.includes('Anam')) //includes(true or false)
+console.log(friends.includes('Aldo'))
+
+if(friends.includes('Zoo')){
+    console.log('You have a friend named Zoo')
+}
+*/
+//---------------Object---------------
+/*
+const anam = {
+    firstName: 'Asif',
+    lastName: 'Anam',
+    age: 2023 - 1999,
+    job: 'Software Engineer',
+    friends: ['Hi', 'Hello', 'Bello']
+}
+console.log(anam)
+console.log(anam.lastName)
+console.log(anam['friends'])
+
+const nameKey = 'Name'
+console.log(anam['first' + nameKey])
+
+// const interestedIn = prompt('What do you want to know?')
+// if(anam[interestedIn]){
+//     console.log(anam[interestedIn])
+// }
+// else {
+//     console.log()
+// }
+anam.location = 'Bangladesh'
+console.log(anam)
+console.log(`${anam.firstName} has ${anam.friends.length} friends and the best friend is ${anam.friends[0]}`)
+
+ */
